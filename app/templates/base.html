@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% if title %}
+    <title>{{ title }} -- Demo Flask</title>
+    {% else %}
+    <title>Welcome to Demo Flask</title>
+    {% endif %}
+</head>
+<body>
+    <div>Demo Flask: <a href="index.html">Home</a></div>
+    <hr>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
